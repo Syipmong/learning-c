@@ -24,11 +24,15 @@ int main() {
     // TODO: Declare two integers: num1 = 25, num2 = 7
     // Write your code here:
     
+    int num1 = 25;
+    int num2 = 7;
     
     // TODO: Calculate and print the following operations:
     // Addition, Subtraction, Multiplication, Division, Modulo
     // Format: "25 + 7 = 32"
     // Write your code here:
+
+    printf("\n %d + %d = %d\n", num1, num2, num1+num2);
     
     
     
@@ -45,6 +49,13 @@ int main() {
     // Apply the following operations and print each step:
     // += 10, -= 5, *= 3, /= 2, %= 7
     // Write your code here:
+    int num = 20;
+    printf("Initial value: %d \n", num);
+    printf("After += 10: %d\n", num+=10);
+    printf("After -= 5: %d\n", num-=5);
+    printf("After *= 3: %d\n", num*=3);
+    printf("\n after /= 2: %d \n", num/=2);
+    printf("\n after %%= 7: %d \n", num%=7);
     
     
     
@@ -62,6 +73,16 @@ int main() {
     // Show the difference between pre and post increment/decrement
     // Print: initial value, ++counter, counter++, --counter, counter--
     // Write your code here:
+    int counter = 10;
+    printf("Initial value: %d\n", counter);
+    printf("Pre-increment (++counter): %d\n", ++counter);
+    printf("Post-increment (counter++): %d\n", counter++);
+    printf("After post-increment: %d\n", counter);
+    printf("Pre-decrement (--counter): %d\n", --counter);
+    printf("Post-decrement (counter--): %d\n", counter--);
+    printf("Final value: %d\n", counter);
+    printf("Final value after all operations: %d\n", counter);
+
     
     
     
@@ -78,6 +99,17 @@ int main() {
     // Test all comparison operators (==, !=, <, >, <=, >=)
     // Print results as "15 < 20 is true" or "15 > 20 is false"
     // Write your code here:
+
+    int a = 15;
+    int b = 20;
+    printf("%d == %d is %s\n", a, b, (a == b) ? "true" : "false");
+    printf("%d != %d is %s\n", a, b, (a != b) ? "true" : "false");
+    printf("%d < %d is %s\n", a, b, (a < b) ? "true" : "false");
+    printf("%d > %d is %s\n", a, b, (a > b) ? "true" : "false");
+    printf("%d <= %d is %s\n", a, b, (a <= b) ? "true" : "false");
+    printf("%d >= %d is %s\n", a, b, (a >= b) ? "true" : "false");
+
+    
     
     
     
