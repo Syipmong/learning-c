@@ -13,6 +13,9 @@
 
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
+#include <math.h>
+
 
 int main() {
     printf("=== Operators Exercise ===\n\n");
@@ -109,7 +112,7 @@ int main() {
     printf("%d <= %d is %s\n", a, b, (a <= b) ? "true" : "false");
     printf("%d >= %d is %s\n", a, b, (a >= b) ? "true" : "false");
 
-    
+
     
     
     
@@ -127,6 +130,13 @@ int main() {
     // Test logical operations: &&, ||, !
     // Example: "Can vote AND has ID: false"
     // Write your code here:
+
+    bool canVote = true;
+    bool hasID = false;
+    printf("Can vote AND has ID: %s\n", (canVote && hasID) ? "true" : "false");
+    printf("Can vote OR has ID: %s\n", (canVote || hasID) ? "true" : "false");
+    printf("NOT canVote: %s\n", (!canVote) ? "true" : "false");
+    printf("NOT hasID: %s\n", (!hasID) ? "true" : "false");
     
     
     
@@ -145,11 +155,22 @@ int main() {
     // - Honors if score >= 85 AND attendance >= 85 AND hasProject == true
     // Write your code here:
     
-    
-    
-    
-    
-    
+    int score = 85; 
+    int attendance = 90;
+    bool hasProject = true;
+    bool isEligible = (score >= 60 && attendance >= 75);
+    bool isHonors = (score >= 85 && attendance >= 85 && hasProject);
+    printf("Is eligible for passing: %s\n", isEligible ? "true" : "false");
+    printf("Is eligible for honors: %s\n", isHonors ? "true" : "false");
+    if (isEligible) {
+        printf("Student is eligible to pass.\n");
+    }
+    if (isHonors) {
+        printf("Student is eligible for honors.\n");
+    }
+    else {
+        printf("Student is not eligible for passing or honors.\n");
+    } 
     printf("\n");
     
     // Task 7: Operator Precedence Challenge
@@ -163,11 +184,14 @@ int main() {
     // Expression 4: 2 + 3 > 4 || 1 == 1
     // Print both the expression and result
     // Write your code here:
-    
-    
-    
-    
-    
+    int expr1 = 5 + 3 * 2; // Should be 11
+    int expr2 = (5 + 3) * 2; // Should be 16
+    bool expr3 = (10 > 5 && 3 < 7); // Should be true (1)
+    bool expr4 = (2 + 3 > 4 || 1 == 1); // Should be true (1)
+    printf("%d + %d * %d = %d\n", 5, 3, 2, expr1);
+    printf("(%d + %d) * %d = %d\n", 5, 3, 2, expr2);
+    printf("%d > %d && %d < %d = %d\n", 10, 5, 3, 7, expr3);
+    printf("%d + %d > %d || %d == %d = %d\n", 2, 3, 4, 1, 1, expr4);
     printf("\n");
     
     // Task 8: Interactive Calculator
@@ -178,14 +202,42 @@ int main() {
     // Perform the calculation and display result
     // Handle basic operations: +, -, *, /, %
     // Write your code here:
-    
-    
-    
-    
-    
-    
-    
-    
+
+    float numA, numB;
+    char operation;
+
+    printf("Enter first number: ");
+    scanf("%f", &numA);
+    printf("Enter second number: ");
+    scanf("%f", &numB);
+    printf("Enter operation (+, -, *, /, %%): ");
+    scanf(" %c", &operation);
+
+    switch (operation) {
+        case '+':
+            printf("%.2f + %.2f = %.2f\n", numA, numB, numA + numB);
+            break;
+        case '-':
+            printf("%.2f - %.2f = %.2f\n", numA, numB, numA - numB);
+            break;
+        case '*':
+            printf("%.2f * %.2f = %.2f\n", numA, numB, numA * numB);
+            break;
+        case '/':
+            if (numB != 0) {
+                printf("%.2f / %.2f = %.2f\n", numA, numB, numA / numB);
+            } else {
+                printf("Error: Division by zero is not allowed.\n");
+            }
+            break;
+        case '%':
+            printf("%.2f %% %.2f = %.2f\n", numA, numB, fmod(numA, numB));
+            break;
+        default:
+            printf("Error: Invalid operation.\n");
+            break;
+    }
+    printf("\n");
     printf("\nExercise completed!\n");
     return 0;
 }
