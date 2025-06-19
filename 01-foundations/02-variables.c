@@ -157,6 +157,10 @@ int main() {
     printf("Characters in \"%s\": %zu bytes total\n", myName, sizeof(myName));
     printf("First character: %c\n", myName[0]);
     printf("Last visible character: %c\n", myName[sizeof(myName)-2]); // -2 because of null terminator
+
+    printf("\n === My name in sentence === \n");
+    printf("My name is %s, I live in %s, I am %d years old, my height is %.3f meters, and my grade is %c. \n", myName,myCity, myAge, myHeight, myGrade);
+    printf("\n === END OF PROGRAM ===\n");
     
     return 0;
 }
