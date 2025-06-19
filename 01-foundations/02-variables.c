@@ -134,9 +134,29 @@ int main() {
     printf("\n=== Variable Modifications ===\n");
     age = age + 1;  // or age++;
     printf("Next year age: %d\n", age);
-    
-    price = price * 1.1;  // 10% increase
+      price = price * 1.1;  // 10% increase
     printf("New price: $%.2f\n", price);
+    
+    // My personal information (added by student)
+    printf("\n=== My Information ===\n");
+    char myName[] = "Yipmong Said";
+    char *myCity = "Plateau";
+    int myAge = 20;
+    float myHeight = 1.75f; // in meters
+    char myGrade = 'A';
+    
+    // Print my information
+    printf("Name: %s (size: %zu bytes)\n", myName, sizeof(myName));
+    printf("City: %s\n", myCity);
+    printf("Age: %d years\n", myAge);
+    printf("Height: %.2f meters\n", myHeight);
+    printf("Grade: %c\n", myGrade);
+    
+    // String analysis for my name
+    printf("\nString analysis for my name:\n");
+    printf("Characters in \"%s\": %zu bytes total\n", myName, sizeof(myName));
+    printf("First character: %c\n", myName[0]);
+    printf("Last visible character: %c\n", myName[sizeof(myName)-2]); // -2 because of null terminator
     
     return 0;
 }
@@ -157,5 +177,3 @@ int main() {
  * 5. Create strings of different lengths and check their sizes
  * 6. Try accessing individual characters in your name
  */
-
- // My Information
