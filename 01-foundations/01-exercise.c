@@ -18,11 +18,11 @@ int main() {
     
     // Task 1: Basic Hello World
     printf("Task 1: Your First Program\n");
-    printf("=== Hello world===\n");
+    printf("--------------------------\n");
     
     // TODO: Print "Hello, World!" to the screen
     // Write your code here:
-    printf("Hello, World!\n");
+    printf("Hello, world!\n");
     
     printf("\n");
     
@@ -33,7 +33,7 @@ int main() {
     // TODO: Print a personalized greeting with your name
     // Example: "Hello, my name is [Your Name]"
     // Write your code here:
-    
+    printf("Hello, my name is Ndu Emmaunel Obinna.\n");
     
     printf("\n");
     
@@ -44,8 +44,7 @@ int main() {
     // TODO: Print your name, age, and favorite hobby on separate lines
     // Use \n for new lines
     // Write your code here:
-    
-    
+    printf("Name: Ndu Emmaunel Obinna\n Age: 19\n Hobby: Gaming\n");
     
     
     printf("\n");
@@ -60,7 +59,10 @@ int main() {
     // *   C Programming*
     // ******************
     // Write your code here:
-    
+    printf("******************\n");
+    printf("*   Welcome to   *\n");
+    printf("* C Programming*\n");
+    printf("******************\n");
     
     
     
@@ -76,7 +78,9 @@ int main() {
     // - A path with backslashes: C:\Program Files\
     // - Text with tabs between words
     // Write your code here:
-    
+    printf("She said \"Hello!\"\n");
+    printf("C:\\Program Files\\\n");
+    printf("This is\a\tabbed\text\n");
     
     
     
@@ -145,3 +149,13 @@ int main() {
  * - Build confidence with C syntax
  * - Experiment with formatted output
  */
+
+//  #include <stdio.h>
+
+// int main() {
+//     printf("Hello,\nWorld!\n"); // Newline
+//     printf("This\tis\ttabbed.\n"); // Horizontal tab
+//     printf("A backslash: \\ \n"); // Literal backslash
+//     printf("A double quote: \" \n"); // Literal double quote
+//     return 0;
+// }
