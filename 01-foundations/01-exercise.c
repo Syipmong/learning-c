@@ -80,7 +80,7 @@ int main() {
     // Write your code here:
     printf("She said \"Hello!\"\n");
     printf("C:\\Program Files\\\n");
-    printf("This is\a\tabbed\text\n");
+    printf("Name:\tPaula\tAge:\t21\tCity:\tNew Orleans\n");
     
     
     
@@ -93,7 +93,14 @@ int main() {
     // TODO: Create a simple ASCII art of your choice
     // Examples: smiley face, house, tree, etc.
     // Write your code here:
-    
+    printf("  *****  \n");
+    printf(" *     * \n");
+    printf("*  o o  *\n");
+    printf("*   ^   *\n");
+    printf("* \\___/ *\n");
+    printf(" *     * \n");
+    printf("  *****  \n");
+
     
     
     
@@ -111,7 +118,10 @@ int main() {
     // - Current date
     // - Purpose of the program
     // Write your code here:
-    
+    printf("Program Name: C \n");
+    printf("Author: Ndu Emmaunel Obinna\n");
+    printf("Date: 2025-06-20\n");
+    printf("Purpose: Practice basic C output and formatting.\n");
     
     
     
@@ -150,12 +160,17 @@ int main() {
  * - Experiment with formatted output
  */
 
-//  #include <stdio.h>
-
-// int main() {
-//     printf("Hello,\nWorld!\n"); // Newline
-//     printf("This\tis\ttabbed.\n"); // Horizontal tab
-//     printf("A backslash: \\ \n"); // Literal backslash
-//     printf("A double quote: \" \n"); // Literal double quote
-//     return 0;
-// }
+// \n: Newline. Moves the cursor to the beginning of the next line.
+// \t: Horizontal tab. Inserts a horizontal tab space.
+// \r: Carriage return. Moves the cursor to the beginning of the current line.
+// \b: Backspace. Moves the cursor one position back.
+// \a: Alert (bell). Produces an audible or visual alert.
+// \\: Backslash. Represents a literal backslash character.
+// \': Single quote. Represents a literal single quote character.
+// \": Double quote. Represents a literal double quote character.
+// \?: Question mark. Represents a literal question mark character (primarily used to avoid misinterpretation as a trigraph).
+// \v: Vertical tab. Inserts a vertical tab.
+// \f: Form feed. Moves the cursor to the beginning of the next page.
+// \0: Null character. Represents the null character, typically used to mark the end of a C string.
+// \nnn: Octal representation. Represents a character using its octal ASCII value (e.g., \072 for a colon).
+// \xhh: Hexadecimal representation. Represents a character using its hexadecimal ASCII value (e.g., \x4A for 'J').
