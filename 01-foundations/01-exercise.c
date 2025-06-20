@@ -18,11 +18,11 @@ int main() {
     
     // Task 1: Basic Hello World
     printf("Task 1: Your First Program\n");
-    printf("--------------------------\n");
+    printf("=== Hello world===\n");
     
     // TODO: Print "Hello, World!" to the screen
     // Write your code here:
-    
+    printf("Hello, World!\n");
     
     printf("\n");
     
